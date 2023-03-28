@@ -187,10 +187,13 @@ function checkAnswer(chooseAnswerContent) {
         <h2 class="text-orange-600 text-5xl text-center mt-8">Result</h2>
         <p class="mt-4 text-center text-2xl text-sky-500">Correct answer numbers : ${correctAnswerNumber}/${totalQuestions}</p>
         <p class="mt-4 text-center text-2xl text-sky-500">Total Score : ${totalScore}</p>
+        <img class="mx-auto mt-4" src="image_first.jpeg" alt="Ảnh icon cho đỡ trống thoii!">
+
         </div>
         `
 
         containerNode.innerHTML = '';
+        document.querySelector('img').remove();
         containerNode.innerHTML += result;
         
     } else {
